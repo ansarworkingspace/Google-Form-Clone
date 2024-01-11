@@ -1,10 +1,21 @@
-import React from 'react'
+import  { FC } from 'react'
 import './Template.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import IconButton from '@mui/material/IconButton';
 import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
+import uuid from 'react-uuid'
+import { useNavigate,NavigateFunction } from 'react-router-dom';
 
-const Template = () => {
+const Template: FC = () => {
+
+    const navigate:NavigateFunction = useNavigate()
+
+    const createForm = (): void => {
+        const id_: string = uuid();
+        navigate(`/form/${id_}`)
+    };
+
+
   return (
     <div className='template_section'>
         <div className="template_top">
@@ -24,7 +35,7 @@ const Template = () => {
 
         </div>
         <div className="template_body">
-            <div className="card">
+            <div className="card" onClick={createForm}>
                 <img className='card_image' src="https://ssl.gstatic.com/docs/templates/thumbnails/forms-blank-googlecolors.png" alt="" />
                 <p className="card_title">Blank</p>
             </div>
