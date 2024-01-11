@@ -1,0 +1,113 @@
+.main_body{
+    background-color: white;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.mainBody_top{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainBody_top_left{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.mainBody_top_right{
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.main_top_center{
+    font-size: 16px;
+    margin-right: 125px;
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    padding: 3px 5px;
+    border-radius: 6px;
+    
+}
+
+
+.storageIconInDoc{
+    color: white;
+    font-size: 12px;
+    background-color: #6E2594;
+    margin-right: 3px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+
+
+
+.mainBody_docs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+
+.doc_card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 200px;
+    margin-right: 20px;
+    border: 0.1px solid #f1ecec;
+    border-radius: 2px;
+}
+
+.doc_card:hover{
+    border: 1px solid #6E2594;
+}
+
+.doc_img{
+    box-sizing: border-box;
+    height: 150px;
+    width: 198px;
+}
+
+.doc_card_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.doc_content{
+    font-size: 12px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.content_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.morvertIconInDoc{
+    font-size: 16px;
+    color: gray;
+   margin-left: 13px;
+}
+
+.doc_content h5{
+    margin-left: 13px;
+}
